@@ -1,0 +1,12 @@
+image: registry.git.uark.edu/omniupdate/sysadmin/perl-base
+cache:
+  paths:
+    - perl_modules
+before_script:
+  - eval "$(perl -Mlocal::lib=${PWD}/perl_modules)"
+build:
+  script:
+    - pp convert.pl -o ou-convert
+  artifacts:
+    paths:
+      - ou-convert

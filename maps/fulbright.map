@@ -1,0 +1,5 @@
+headcode,<headcode>
+ouc:div[@label='gallery'], maincontent
+ouc:properties/title, title
+ouc:properties/meta[@name='Description']/@content,description
+ouc:div[@label='maincontent'], maincontent

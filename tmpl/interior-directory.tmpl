@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/xsl/interior-directory.xsl" site="templates" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+    <headcode></headcode>
+    <bodycode></bodycode>
+    <config>
+        <parameter name="pagetype">interior-directory</parameter>
+        <!-- com.omniupdate.properties -->
+        <parameter name="numcols" type="select" group="everyone" prompt="Number of Columns" alt="Select the number of columns for the page layout.">
+            <!--%echo var="numcols" encoding="none" -->
+        </parameter>
+		
+		<parameter group="everyone" section="Directory API Variables" name="directoryapi_url" prompt="Directory API URL" alt="Copy and paste the URL from the 'copy API only' field from http://directory.uark.edu/directoryapi."><!--%echo var="directoryapi_url" --></parameter>
+
+                        <parameter group="everyone" name="directoryapi_header" prompt="Directory API Header" rows="10" alt="Enter any HTML that should appear directly above the directory grid on directory page."><!--%echo var="directoryapi_header" --></parameter>
+
+                        <parameter group="everyone" name="directoryapi_noPhone" prompt="Directory API No Phone" alt="Enter the phone number that should reflect for any persons who do not have phone contact info.  Leaving this field blank will remove the phone number field from any person who doesn't have a phone number listed in BASIS."><!--%echo var="directoryapi_noPhone" --></parameter>
+
+                        <parameter group="everyone" name="directoryapi_imageShape" prompt="Portrait, square or circular photos?" type="select" alt="Do you want portrait, square or circular photos (portrait is default)?">
+
+                                    <!--%echo var="directoryapi_imageShape" encoding="none" -->
+
+                        </parameter>
+
+                        <parameter group="everyone" name="directoryapi_noPhoto" prompt="Directory API No Photo Image" type="select" alt="Choose which no photo image will be used for if a person doesn't have an image.">
+
+                                    <!--%echo var="directoryapi_noPhoto" encoding="none" -->
+
+                        </parameter>
+		
+        <!-- /com.omniupdate.properties -->
+    </config>
+
+    <!-- com.omniupdate.properties -->
+    <title><!--%echo var="title" --></title>
+    <!-- /com.omniupdate.properties -->
+
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="Description" content="<!--%echo var="description" -->" />
+        <meta name="Keywords" content="<!--%echo var="keywords" -->" />
+        <meta name="Author" content="<!--%echo var="author" -->" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+
+
+    <leftcolumn>
+        <!-- com.omniupdate.div label="coltwocontent" group="everyone" button="707" break="break" -->
+        <!-- com.omniupdate.editor csspath="/_resources/ou/editor/ouedit.css" width="1200" cssmenu="/_resources/ou/editor/styles.txt" -->
+        <h2>Left Column</h2>
+
+        <!-- /com.omniupdate.div -->
+    </leftcolumn>
+
+    <maincontent>
+        <!-- com.omniupdate.div label="maincontent" group="everyone" button="707" break="break" -->
+        <!-- com.omniupdate.editor csspath="/_resources/ou/editor/ouedit.css" width="1200" cssmenu="/_resources/ou/editor/styles.txt" -->
+        <!--%echo var="maincontent" encoding="none" -->
+		
+		<div class="ou-profile-directory">
+		      
+		</div>	
+       <!-- /com.omniupdate.div -->
+    </maincontent>
+
+    <rightcolumn>
+        <!-- com.omniupdate.div label="colthreecontent" group="everyone" button="707" break="break" -->
+        <!-- com.omniupdate.editor csspath="/_resources/ou/editor/ouedit.css" width="1200" cssmenu="/_resources/ou/editor/styles.txt" -->
+        <h2>Right Column</h2>
+
+        <!-- /com.omniupdate.div -->
+    </rightcolumn>
+
+    <far-rightcolumn>
+        <!-- com.omniupdate.div label="colfourcontent" group="everyone" button="707" break="break" -->
+        <!-- com.omniupdate.editor csspath="/_resources/ou/editor/ouedit.css" width="1200" cssmenu="/_resources/ou/editor/styles.txt" -->
+        <h2>Far Right Column</h2>
+
+        <!-- /com.omniupdate.div -->
+    </far-rightcolumn>
+
+</document>

@@ -1,0 +1,8 @@
+title,title
+maincontent,maincontent
+rightcontent,panels
+config/parameter[@name='updatedDate'],updatedDate
+metadata/meta[@name='Description']/@content,description
+metadata/meta[@name='Keywords']/@content,keywords
+headcode,<headcode>
+bodycode,<bodycode>

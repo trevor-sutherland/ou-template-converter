@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/xsl/interior.xsl" site="templates" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+    <headcode></headcode>
+    <bodycode></bodycode>
+    <config>
+        <parameter name="pagetype">interior</parameter>
+        <!-- com.omniupdate.properties -->
+        <parameter name="numcols" type="select" group="everyone" prompt="Number of Columns" alt="Select the number of columns for the page layout.">
+            <!--%echo var="numcols" encoding="none" -->
+        </parameter>
+        <!-- /com.omniupdate.properties -->
+    </config>
+
+    <!-- com.omniupdate.properties -->
+    <title><!--%echo var="title" --></title>
+    <!-- /com.omniupdate.properties -->
+
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="Description" content="<!--%echo var="description" -->" />
+        <meta name="Keywords" content="<!--%echo var="keywords" -->" />
+        <meta name="Author" content="<!--%echo var="author" -->" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+
+
+    <leftcolumn>
+        <!-- com.omniupdate.div label="coltwocontent" group="everyone" button="707" break="break" -->
+        <!-- com.omniupdate.editor csspath="/_resources/ou/editor/ouedit.css" width="1200" cssmenu="/_resources/ou/editor/styles.txt" -->
+        <h2>Left Column</h2>
+
+        <!-- /com.omniupdate.div -->
+    </leftcolumn>
+
+    <maincontent>
+        <!-- com.omniupdate.div label="maincontent" group="everyone" button="707" break="break" -->
+        <!-- com.omniupdate.editor csspath="/_resources/ou/editor/ouedit.css" width="1200" cssmenu="/_resources/ou/editor/styles.txt" -->
+       <!--%echo var="maincontent" encoding="none" -->
+        <!-- /com.omniupdate.div -->
+    </maincontent>
+
+    <rightcolumn>
+        <!-- com.omniupdate.div label="colthreecontent" group="everyone" button="707" break="break" -->
+        <!-- com.omniupdate.editor csspath="/_resources/ou/editor/ouedit.css" width="1200" cssmenu="/_resources/ou/editor/styles.txt" -->
+        <h2>Right Column</h2>
+
+        <!-- /com.omniupdate.div -->
+    </rightcolumn>
+
+    <far-rightcolumn>
+        <!-- com.omniupdate.div label="colfourcontent" group="everyone" button="707" break="break" -->
+        <!-- com.omniupdate.editor csspath="/_resources/ou/editor/ouedit.css" width="1200" cssmenu="/_resources/ou/editor/styles.txt" -->
+        <h2>Far Right Column</h2>
+
+        <!-- /com.omniupdate.div -->
+    </far-rightcolumn>
+
+</document>
